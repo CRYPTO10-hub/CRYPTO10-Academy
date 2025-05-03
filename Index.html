@@ -73,7 +73,25 @@
       <a href="#">Commencer la formation</a>
     </div>
   </main>
+<div class="cta">
+  <button id="connectWallet">🔗 Connecter le wallet</button>
+  <p id="walletAddress"></p>
+</div>
 
+<script>
+  document.getElementById("connectWallet").addEventListener("click", async () => {
+    if (window.ethereum) {
+      try {
+        const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+        document.getElementById("walletAddress").innerText = "Connecté : " + accounts[0];
+      } catch (error) {
+        alert("Connexion refusée");
+      }
+    } else {
+      alert("MetaMask non détecté. Installez-le !");
+    }
+  });
+</script>
   <footer>
     © 2025 CRYPTO 10 Academy – Tous droits réservés.
   </footer>
