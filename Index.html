@@ -1,61 +1,22 @@
-
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <title>CRYPTO 10 Academy</title>
   <link rel="stylesheet" href="style.css">
-  <style>  
-  body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-background-color: #f5f7f8;
-  color: #333;
-}
-
-.menu-general {
-  background-color: #007b5f;
-  padding: 10px 0;
-}
-
-.menu-items {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.menu-items li {
-  margin: 5px 10px;
-}
-
-.menu-items a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 14px;
-  border-radius: 5px;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-
-.menu-items a:hover {
-  background-color: #005f47;
-}
-
-main {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-  </style>
+<script src="script.js"></script>
 </head>
 <body>
 
-  <nav class="menu-general">
-    <ul class="menu-items">
+  <nav class="navbar">
+    <div class="logo">CRYPTO 10 Academy</div>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav no-search">
       <li><a href="index.html">Accueil</a></li>
       <li><a href="formation.html">Formation</a></li>
       <li><a href="#">Communauté</a></li>
@@ -67,10 +28,11 @@ main {
 
   <main>
     <section>
-      <h1>Bienvenue sur CRYPTO 10 Academy</h1>
+ <h1>Bienvenue sur CRYPTO 10 Academy</h1>
       <p>Apprenez la blockchain appliquée à l'agriculture, gratuitement et à votre rythme.</p>
     </section>
   </main>
 
+  <script src="script.js"></script>
 </body>
 </html>
