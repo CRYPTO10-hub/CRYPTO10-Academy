@@ -2,23 +2,36 @@
 <html lang="fr">
 <head>
   <style>
-    .main-nav {
+
+.menu-general {
   background-color: #007b5f;
   padding: 10px 0;
-  text-align: center;
 }
 
-.main-nav ul {
-  list-style-type: none;
+.menu-general ul {
+  list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* S'adapte sur petit écran */
 }
 
-.main-nav li {
-  display: inline;
-  margin: 0 15px;
+.menu-general li {
+  margin: 0 10px;
 }
 
+.menu-general a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-general a:hover { background-color: #005f47;
+}
 .main-nav a {
   color: white;
   text-decoration: none;
@@ -59,16 +72,16 @@
   </style>
 </head>
 <body>
-  <nav class="main-nav">
+  <nav class="menu-general">
   <ul>
     <li><a href="index.html">Accueil</a></li>
-    <li><a href="apropos.html">À propos</a></li>
     <li><a href="formation.html">Formation</a></li>
+    <li><a href="#">Communauté</a></li>
+    <li><a href="apropos.html">À propos</a></li>
     <li><a href="certificat.html">Certificat NFT</a></li>
-    <li><a href="communaute.html">Communauté</a></li>
-    <li><a href="faq.html">Faq</a></li>
+    <li><a href="faq.html">FAQ</a></li>
   </ul>
-    </nav>
+</nav>
   <nav style="background: #f2f2f2; padding: 10px; text-align: center;">
     <a href="#niveau1" style="margin: 0 10px;">Niveau 1</a>
     <a href="#niveau2" style="margin: 0 10px;">Niveau 2</a>
